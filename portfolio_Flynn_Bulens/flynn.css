@@ -1,0 +1,261 @@
+
+body {
+	margin: 0;
+}
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	color: #929292;
+}
+button {
+	width: 90%;
+}
+.center-container {
+	text-align: center;
+}
+.menu_container{
+	text-align: center;
+	display: inline-block;
+}
+.foto_container{
+	text-align: none;
+	display: block;
+}
+
+h1 {
+	font-size: 32px; letter-spacing: 5px; font-weight: 300; 
+	margin: 0;
+}
+h2 {
+	font-size: 16px; letter-spacing: 4px; font-weight: 100;
+}
+.top {
+	padding:10px;
+	font-size: 12px;
+    color: #929292;
+    text-align: center;
+    font-family: sans-serif;
+	background-color: #d0cfcf;
+}
+.footer {
+	background-color: #d0cfcf;
+}
+.footer td {
+	padding:10px;
+	text-align: center;
+}
+.footer a:hover {
+	text-decoration: none;
+}
+ul#main_menu{
+	display: block;
+	text-align: left;
+	margin: 60px 0 30px 0;
+	padding: 0;
+}
+ul#main_menu li {
+	list-style: none;
+	
+}
+ul#main_menu li a {
+	display: block;
+	background-color: #d0cfcf;
+	padding:8px 15px;
+	color: #929292;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+ul#main_menu li a:hover,  ul#main_menu li a.active{
+	background-color: #000000;
+	color:white;
+}
+ul#main_menu li.last a {
+	border:none;
+}
+.horizontal-menu .menu_container {
+	display: table;
+	width: 100%;
+	margin: 10px 0 40px 0;
+}
+.horizontal-menu ul#main_menu {
+	display: table-row;
+}
+.horizontal-menu ul#main_menu li {
+	margin: 10px 0;
+	display: table-cell;
+	text-align: center;
+}
+.horizontal-menu ul#main_menu li a {
+	border-bottom: 0;
+	border-right: 1px solid white;
+}
+.horizontal-menu ul#main_menu li.last a {
+	border-bottom: 0;
+	border-right: 0;
+}
+.accordeon {
+	    margin: 0;
+    padding: 0;
+}
+
+.accordeon li:hover{
+	background-color: #d0cfcf;
+}
+.accordeon li:before{
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top:10px;
+	right:10px;
+	with:10px;
+	height: 10px;
+}
+.accordeon li {
+	display: block;
+    border: 1px solid #d0cfcf;
+    border-radius: 0;
+    padding: 15px;
+    margin-bottom: 15px;
+	cursor: pointer;
+	position: relative;
+	background-position: right top;
+	background-image: url("images/arrow2.png");
+	background-repeat: no-repeat;
+
+}
+.accordeon li.active {
+	background-image: url("images/arrow_up.png");
+	background-color: transparent;
+}
+
+.fotocont img{
+	margin-top: 15px;
+}
+
+.fotocont{
+	display: none;
+}
+
+#main-wrapper {
+	width: 100%;
+}
+table.fotowrap {
+	width: 100%;
+	margin-top: 20px;
+}
+table.fotowrap td {
+	width:33%;
+}
+img.foto {
+	height:370px;
+}
+.center {
+	text-align: center;
+}
+.video-jury {
+	display:inline-block;
+}
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+ul#foto{
+	display: inline;
+	text-align: none;
+	margin: 50px 0 30px 0;
+	padding: 0;
+}
+ul#foto li {
+	list-style: none;
+	
+}
+ul#foto li a {
+	display: inline;
+	background-color: #d0cfcf;
+	padding:8px 15px;
+	
+}
+
+
+@media screen and (max-width:600px) {
+/*styling for objects with screen size less than 600px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100%;
+}
+.footer {
+	/* Footer has 2 columns each of 48% width */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+table.responsiveImage {
+	/* Container for images in catalog */
+	height: auto !important;
+	max-width: 30% !important;
+	width: 30% !important;
+}
+table.responsiveContent {
+	/* Content that accompanies the content in the catalog */
+	height: auto !important;
+	max-width: 66% !important;
+	width: 66% !important;
+}
+.top {
+	/* Each Columnar table in the header */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+}
+
+@media screen and (max-width:480px) {
+/*styling for objects with screen size less than 480px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100% !important;
+	border-style: none !important;
+}
+.footer {
+	/* Each footer column in this case should occupy 96% width  and 4% is allowed for email client padding*/
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveImage {
+	/* Container for each image now specifying full width */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveContent {
+	/* Content in catalog  occupying full width of cell */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.top {
+	/* Header columns occupying full width */
+	height: auto !important;
+	max-width: 100% !important;
+	width: 100% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+button {
+	width: 90%!important;
+}
+}
